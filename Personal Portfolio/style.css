@@ -1,0 +1,253 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+ /* Styling NavBar */
+.nav {
+    background: #be3144;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    font-weight: 600;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+    z-index: 10;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.nav-list a {
+    display: block;
+    padding: 23px 24px  ;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-list li{
+    list-style: none;
+}
+
+.nav-list li :hover{
+    background-color: #45567d; 
+}
+
+/* Styling Welcome Section */
+
+.welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+.welcome-section h1 {
+    color: white;
+    font-size: 3.8rem;
+    margin: 35px 0px 0px 0px;
+    padding-top: 152px;
+}
+
+.welcome-section p {
+    font-size: 2rem;
+    font-weight: 200;
+    color: #be3144;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* Styling Project Section  */
+
+#projects {
+    text-align: center;
+    padding: 6rem 2rem;
+    background: #45567d;
+}
+
+h2 {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 2.6rem;
+    padding-bottom: 6px;
+    border-bottom: 0.2rem solid white;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.project {
+    background: #303841;
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+    border-radius: 2px;
+}
+
+.project-image {
+    height: calc(100% - 4.4rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-title {
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.project:hover .code {
+    color: #ff7f50;
+}
+
+.code {
+    color: #303841;
+    transition: color 0.3s ease-out;
+}
+
+.card:hover{
+    box-shadow: 18px 17px 13px 0px rgba(0,0,0,0.47);
+    -webkit-box-shadow: 18px 17px 13px 0px rgba(0,0,0,0.47);
+    -moz-box-shadow: 18px 17px 13px 0px rgba(0,0,0,0.47);
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 2px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.btn-show-all {
+    background: #303841;
+    width: 35%;
+    padding: 10px;
+    margin-left: 560px;
+    transition: background 0.3s ease-out;
+}
+
+.fa-chevron-right::before{
+    content: "\f054"; 
+}
+
+.btn-show-all:hover {
+    background: #be3144;
+}
+
+.btn-show-all:hover > i {
+    transform: translateX(2px);
+}
+
+.btn-show-all > i {
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+}
+
+/* Styling Contact Section  */
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background: #303841;
+}
+
+.contact-section-header h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 3.75rem;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-section-header p{
+    color: white;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding-top: 6px;
+}
+
+.contact-links{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.contact-details {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-shadow: 2px 2px 1px #1f1f1f;
+}
+
+.contact-details:hover {
+    transition: transform 0.3s ease-out;
+    transform: translateY(8px);
+}
+
+footer {
+    background: #303841;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 4px solid #be3144;
+    font-weight: 300;
+    color: white;
+}
+
+/* Styling Footer Section  */
+
+footer > p{
+    margin: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
